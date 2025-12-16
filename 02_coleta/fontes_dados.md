@@ -1,31 +1,39 @@
 # Fontes de Dados
 
-## Descrição da Fonte
-
-Os dados utilizados neste projeto representam informações de vendas,
-incluindo pedidos, produtos, clientes e categorias. O dataset é utilizado
-para simular um cenário real de análise de dados em um ambiente de
-Data Warehouse.
-
 ## Origem dos Dados
 
--   Dataset público / dados simulados
--   Arquivos disponibilizados em formato CSV
+Os dados utilizados neste projeto são provenientes do dataset público
+"Brazilian E-Commerce Public Dataset by Olist", disponibilizado na
+plataforma Kaggle.
 
-## Principais Entidades
+O dataset contém informações reais de pedidos realizados em um
+marketplace brasileiro, incluindo dados de clientes, produtos,
+vendedores, pagamentos e entregas.
 
--   Pedidos
--   Produtos
--   Clientes
--   Categorias
--   Datas
+## Arquivos Utilizados
+
+Os principais arquivos CSV utilizados no projeto são:
+
+-   olist_orders_dataset.csv
+-   olist_order_items_dataset.csv
+-   olist_products_dataset.csv
+-   olist_customers_dataset.csv
+-   olist_sellers_dataset.csv
+-   olist_order_payments_dataset.csv
+-   olist_product_category_name_translation.csv
+
+## Formato dos Dados
+
+-   Formato: CSV
+-   Codificação: UTF-8
+-   Separador: vírgula
 
 ## Volume e Periodicidade
 
--   Volume: pequeno a médio (adequado para MVP)
+-   Volume: médio (aprox. 100 mil pedidos)
 -   Atualização: carga única para fins de estudo
 
-## Camada de Destino
+## Camada Bronze
 
-Os dados são inicialmente armazenados na camada **Bronze**, preservando
-o formato original para rastreabilidade e auditoria.
+Os arquivos são armazenados em seu formato original na camada Bronze,
+preservando a integridade dos dados para rastreabilidade.
