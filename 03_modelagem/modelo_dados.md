@@ -1,17 +1,18 @@
 # Modelagem de Dados
 
-Para organização das informações, foi adotado o modelo dimensional
-no formato de esquema estrela (Star Schema), amplamente utilizado
-em ambientes de Data Warehouse.
+Para este projeto foi adotado o modelo dimensional no formato de
+esquema estrela (Star Schema), amplamente utilizado em ambientes
+de Data Warehouse para análises de negócio.
 
-Esse modelo é composto por uma tabela fato, responsável por armazenar
-as métricas de negócio, e tabelas dimensão, que fornecem contexto
-para as análises realizadas.
+## Fonte do Modelo
+
+O modelo foi construído a partir do dataset da Olist, que representa
+operações reais de um marketplace brasileiro de e-commerce.
 
 ## Granularidade
 
-A granularidade definida para a tabela fato é **uma linha por item
-de pedido**, permitindo análises detalhadas por produto, cliente
+A granularidade definida para a tabela fato é **uma linha por item de
+pedido**, permitindo análises detalhadas por produto, cliente, vendedor
 e período.
 
 ## Tabela Fato
@@ -19,33 +20,36 @@ e período.
 ### fato_vendas
 
 -   id_pedido
+-   id_item_pedido
 -   id_produto
 -   id_cliente
--   id_categoria
+-   id_vendedor
 -   id_data
--   quantidade
--   valor_unitario
--   valor_total
+-   preco_produto
+-   valor_frete
 
 ## Tabelas Dimensão
 
 ### dim_produto
 
 -   id_produto
--   nome_produto
--   descricao_produto
+-   nome_categoria
+-   peso_produto
+-   comprimento_produto
+-   altura_produto
+-   largura_produto
 
 ### dim_cliente
 
 -   id_cliente
--   nome_cliente
--   cidade
--   estado
+-   cidade_cliente
+-   estado_cliente
 
-### dim_categoria
+### dim_vendedor
 
--   id_categoria
--   nome_categoria
+-   id_vendedor
+-   cidade_vendedor
+-   estado_vendedor
 
 ### dim_data
 
