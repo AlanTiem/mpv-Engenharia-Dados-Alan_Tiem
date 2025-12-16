@@ -9,7 +9,7 @@ modelagem e análise dos dados.
 
 ## Etapas do Processo
 
-1. Download do dataset da Olist a partir da plataforma Kaggle
+1. Download do dataset da Olist a partir da plataforma Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 2. Extração dos arquivos CSV localmente
 3. Upload dos arquivos CSV para o Databricks File System (DBFS)
 4. Organização dos arquivos na camada Bronze
