@@ -1,9 +1,27 @@
 # Objetivo do Projeto
 
-Este projeto tem como objetivo desenvolver um pipeline de dados utilizando
-a plataforma Databricks, aplicando conceitos fundamentais de engenharia de
-dados, como ingestão, modelagem, transformação e análise de dados.
+Construir um MVP de Data Warehouse utilizando a plataforma Databricks,
+a partir do dataset público da Olist (e-commerce brasileiro), aplicando
+boas práticas de coleta, modelagem dimensional, ETL e análise de dados.
 
-O trabalho busca simular um cenário real de processamento de dados
-corporativos, permitindo a consolidação de informações em um modelo
-estruturado que suporte análises de negócio e tomada de decisão.
+## Contexto
+
+O projeto utiliza dados reais de um marketplace brasileiro, contendo
+informações sobre pedidos, clientes, produtos, vendedores, pagamentos
+e entregas, com o objetivo de apoiar análises de desempenho comercial
+e operacional.
+
+## Perguntas de Negócio
+
+-   Qual a evolução do volume de pedidos ao longo do tempo?
+-   Quais produtos e categorias geram maior faturamento?
+-   Qual o ticket médio por pedido?
+-   Como está distribuído o volume de vendas por estado?
+-   Qual o tempo médio de entrega dos pedidos?
+
+## Tecnologias Utilizadas
+
+-   Databricks
+-   PySpark
+-   SQL
+-   Git / GitHub
